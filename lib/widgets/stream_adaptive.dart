@@ -11,7 +11,7 @@ class AdaptiveStream{
     List<String> messages = [
       "Hola, mi nombre es Carlos",
       "Este es mi trabajo!",
-      "Este es un stream en Flutter con Stream",
+      "Este es un stream en Flutter con StreamBuider dentro de un ListView.builder",
       "Streams son geniales para brindar datos en tiempo real",
       "Estas lineas de textos son aleatorias",
     ];

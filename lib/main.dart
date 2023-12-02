@@ -69,14 +69,15 @@ class _MessageScreenState extends State<MessageScreen> {
 
   Widget buidMessage(String message) {
     return ListView.builder(
-        itemCount: message.length,
-        itemBuilder: (BuildContext context, int index) {
-          final mesg = message[index];
-          return SizedBox(
-            child: ListTile(
-              title: Text(mesg, style:const TextStyle(fontWeight: FontWeight.bold),)
-            ),
-          );
-        });
+      scrollDirection: Axis.horizontal,
+      shrinkWrap: true,
+      itemCount: message.length,
+      itemBuilder: (BuildContext context, int index) {
+        final mesg = message[index];
+        return Center(
+          child: Text(mesg, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+        );
+      },
+    );
   }
 }
